@@ -9,18 +9,25 @@ Requirements- Node.js
 Getting the requirements- Download and install NodeJS
 - Install truffle and ganache-cli using node packager manager (npm)
 
+```
+
 npm install -g truffle
 npm install -g ganache-cli
+
+```
 
 - Install Metamask browser extension
 Configuring the project for development- Clone this repository
 
+```
 git clone https://github.com/PaleDeath/Genesis-project.git
 cd Genesis-Project
+```
 
 - Run local Ethereum blockchain
-
+```
 ganache-cli
+```
 
 Note: Do not close ganache-cli (the blockchain network needs to be running all the time)
 - Configure Metamask on the browser with the following details
@@ -28,12 +35,13 @@ Note: Do not close ganache-cli (the blockchain network needs to be running all t
     - Chain ID: 1337
 - Import account(s) using private keys from ganache-cli to the Metamask extension on the browser
 - Deploy smart contract to the (local) blockchain network (i.e ganache-cli)
-
+```
 truffle migrate
-
+```
 Note: Use truffle migrate --reset for re-deployments
 - Launch the development server (frontend)
-
+```
 cd client
 npm install
 npm start
+```
